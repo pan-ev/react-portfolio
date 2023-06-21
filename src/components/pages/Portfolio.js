@@ -3,12 +3,31 @@ import "../../styles/Portfolio.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Project from "./Projects";
 
 export default function Portfolio() {
+  const projects = [
+    {
+      name: "Project 1",
+      description: "First Project",
+      githubLink: "https://github.com/pan-ev/conscious-spender",
+      link: "https://murmuring-everglades-61234.herokuapp.com/login",
+      screenshot: "https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80",
+    },
+    {
+      name: "Project 2",
+      description: "Second Project",
+      githubLink: "https://github.com/pan-ev/conscious-spender",
+      link: "https://murmuring-everglades-61234.herokuapp.com/login",
+      screenshot: "https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80",
+    },
+  ]
+  
   return (
     <div>
       <h1>Portfolio</h1>
-      <div className="container">
+      <Project projects={projects}></Project>
+      {/* <div className="container">
         <div className="card">
           <h2>Project 1</h2>
           <FontAwesomeIcon
@@ -87,18 +106,7 @@ export default function Portfolio() {
           </div>
           <button></button>
         </div>
-      </div>
-      <a
-        href="https://dribbble.com/YancyMin"
-        className="dr-url"
-        target="_blank"
-      >
-        <img
-          className="dr"
-          src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png"
-          alt=""
-        />
-      </a>
+      </div> */}
     </div>
   );
 }
